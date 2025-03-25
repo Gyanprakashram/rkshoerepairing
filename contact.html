@@ -324,7 +324,7 @@
           })
           .then(response => response.json())
           .then(data => {
-              alert("Data saved successfylly!");
+              alert("Message sent successfylly!");
               document.getElementById("contactForm").reset(); // Clear the form
           })
           .catch(error => console.error("Error:", error));
@@ -332,7 +332,24 @@
   });
 </script>
 
-
+<li class="nav-item">
+  <a href="https://wa.me/919507292020" target="_blank" class="whatsapp-float">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+           alt="WhatsApp" style="width: 50px; height: 60px;"> Messaage us
+  </a>
+</li>
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: red;
+}
+.whatsapp-float img {
+  width: 150px;
+  height: 550px;
+}
 
     
   </body>
